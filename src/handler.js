@@ -51,6 +51,8 @@ function addBookHandler(request, h) {
     return response;
   }
 
+  books.push(newBook);
+
   const response = h.response({
     status: 'success',
     message: 'Buku berhasil ditambahkan',
@@ -62,4 +64,26 @@ function addBookHandler(request, h) {
   return response;
 }
 
-module.exports = { addBookHandler };
+function getAllBooks(request, h) {
+  const filteredBooks = books.map((book) => {
+    const filteredBookDetails = {
+      id: book.id,
+      name: book.name,
+      publisher: book.publisher,
+    };
+
+    return filteredBookDetails;
+  });
+
+  const response = h.response({
+    status: 'success',
+    data: {
+      books: filteredBooks,
+    },
+  });
+
+  response.code(200);
+  return response;
+}
+
+module.exports = { addBookHandler, getAllBooks };

@@ -27,12 +27,8 @@ Submission untuk Proyek Akhir membuat Bookshelf API di kelas Dicoding "Belajar M
 - [x] [Mandatory] Delete Book with Correct Id
 - [x] [Mandatory] Delete Finished book
 - [x] [Mandatory] Delete Book with Invalid Id
-- [ ] Add Reading and Finished Book
-- [ ] Add Reading and Unfinished Book with "Dicoding" Name
-- [ ] Add Unreading Books and Unfinished Book "Dicoding" Name
-- [ ] Add Unreading Books and Unfinished Book
-- [ ] [Optional] Get All Reading Books
-- [ ] [Optional] Get All Unreading Books
-- [ ] [Optional] Get All Finished Books
-- [ ] [Optional] Get All Unfinished Books
-- [ ] [Optional] Get All Books Contains "Dicoding" Name
+- [x] [Optional] Get All Reading Books
+- [x] [Optional] Get All Unreading Books
+- [x] [Optional] Get All Finished Books
+- [x] [Optional] Get All Unfinished Books
+- [x] [Optional] Get All Books Contains "Dicoding" Name

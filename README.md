@@ -17,9 +17,9 @@ Submission untuk Proyek Akhir membuat Bookshelf API di kelas Dicoding "Belajar M
 - [x] [Mandatory] Add Book Without Name
 - [x] [Mandatory] Add Book with Page Read More Than Page Count
 - [x] [Mandatory] Get All Books
-- [ ] [Mandatory] Get Detail Books with Correct Id
-- [ ] [Mandatory] Get Detail Finished Book
-- [ ] [Mandatory] Get Detail Books With Invalid Id
+- [x] [Mandatory] Get Detail Books with Correct Id
+- [x] [Mandatory] Get Detail Finished Book
+- [x] [Mandatory] Get Detail Books With Invalid Id
 - [ ] [Mandatory] Update Book With Complete Data
 - [ ] [Mandatory] Update Book Without Name
 - [ ] [Mandatory] Update Book With Page Read More Than Page Count

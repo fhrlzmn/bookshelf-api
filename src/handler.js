@@ -64,7 +64,7 @@ function addBookHandler(request, h) {
   return response;
 }
 
-function getAllBooks(request, h) {
+function getAllBooksHandler(request, h) {
   const filteredBooks = books.map((book) => {
     const filteredBookDetails = {
       id: book.id,
@@ -86,4 +86,28 @@ function getAllBooks(request, h) {
   return response;
 }
 
-module.exports = { addBookHandler, getAllBooks };
+function getBookByIdHandler(request, h) {
+  const bookId = request.params.id;
+
+  const selectedBook = books.filter((book) => book.id === bookId)[0];
+
+  if (!selectedBook) {
+    const response = h.response({
+      status: 'fail',
+      message: 'Buku tidak ditemukan',
+    });
+    response.code(404);
+    return response;
+  }
+
+  const response = h.response({
+    status: 'success',
+    data: {
+      book: selectedBook,
+    },
+  });
+  response.code(200);
+  return response;
+}
+
+module.exports = { addBookHandler, getAllBooksHandler, getBookByIdHandler };

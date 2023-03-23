@@ -24,9 +24,9 @@ Submission untuk Proyek Akhir membuat Bookshelf API di kelas Dicoding "Belajar M
 - [x] [Mandatory] Update Book Without Name
 - [x] [Mandatory] Update Book With Page Read More Than Page Count
 - [x] [Mandatory] Update Book with Invalid Id
-- [ ] [Mandatory] Delete Book with Correct Id
-- [ ] [Mandatory] Delete Finished book
-- [ ] [Mandatory] Delete Book with Invalid Id
+- [x] [Mandatory] Delete Book with Correct Id
+- [x] [Mandatory] Delete Finished book
+- [x] [Mandatory] Delete Book with Invalid Id
 - [ ] Add Reading and Finished Book
 - [ ] Add Reading and Unfinished Book with "Dicoding" Name
 - [ ] Add Unreading Books and Unfinished Book "Dicoding" Name

@@ -13,7 +13,7 @@ function addBookHandler(request, h) {
     reading,
   } = request.payload;
   const id = nanoid(16);
-  const finished = pageCount === readPage ? true : false;
+  const finished = pageCount === readPage;
   const insertedAt = new Date().toISOString();
   const updatedAt = insertedAt;
 
@@ -76,22 +76,24 @@ function getAllBooksHandler(request, h) {
       if (reading) {
         if (reading === '1') {
           return book.reading === true;
-        } else if (reading === '0') {
-          return book.reading === false;
-        } else {
-          return book.reading;
         }
+        if (reading === '0') {
+          return book.reading === false;
+        }
+        return book.reading;
       }
 
       if (finished) {
         if (finished === '1') {
           return book.finished === true;
-        } else if (finished === '0') {
-          return book.finished === false;
-        } else {
-          return book.finished;
         }
+        if (finished === '0') {
+          return book.finished === false;
+        }
+        return book.finished;
       }
+
+      return book;
     });
 
     const newBookLists = filteredBooks.map((book) => ({
